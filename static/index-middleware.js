@@ -18,3 +18,5 @@ app.use( async ( ctx ) => {
 app.listen(3000, () => {
   console.log('[demo] static-use-middleware is starting at port 3000')
 })
+
+//访问http://localhost:3000/  会默认指定index.html的内容 不想可以改名字。。。

@@ -15,6 +15,8 @@ function dir(url, reqPath) {
 
     // 遍历读取当前目录下的文件、子目录
     let contentList = walk(reqPath)
+    //entries() 方法返回一个新的Array Iterator对象，
+    //该对象包含数组中每个索引的键/值对。
 
     let html = `<ul>`
     for (let [index, item] of contentList.entries()) {
